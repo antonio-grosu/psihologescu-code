@@ -2,7 +2,7 @@ export default function Despre() {
   return (
     <div>
       <div className="flex flex-col items-center p-8 gap-4 bg-gray-100">
-        <h1 className="text-2xl text-orange-500">despre psihologesu</h1>
+        <h1 className="text-5xl text-customOrange">despre psihologesu</h1>
         <p className="w-5/6 text-center">
           Psihologescu este un concept venit din dorința de a aduce mai multă
           stare de bine. A apărut în anul 2010 la inițiativa Adinei Escu,

@@ -11,8 +11,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        customGray: 'rgb(233, 221, 204)', // Definești culoarea ta personalizată
+        customPiele: 'rgb(233, 221, 204)', // Definești culoarea ta personalizată
         customPeach: 'rgb(247,195,164,255)',
+        customGray: 'rgb(219, 219, 219)',
+        customOrange: 'rgb(211, 92, 19)',
       },
     },
   },

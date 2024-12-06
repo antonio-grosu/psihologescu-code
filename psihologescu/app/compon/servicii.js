@@ -2,7 +2,7 @@ export default function Servicii() {
   return (
     <div>
       <div className="flex flex-col items-center p-8 gap-4 bg-gray-100">
-        <h1 className="text-2xl text-orange-500">servicii</h1>
+        <h1 className="text-5xl text-customOrange">servicii</h1>
         <p className="w-5/6 text-center">
           În cei 10 ani de experiență, Psihologescu a dezvoltat metode complexe
           de a veni în întâmpinarea nevoilor persoanelor de toate vârstele din
@@ -19,12 +19,10 @@ export default function Servicii() {
         </p>
         <button className="underline">mai mult</button>
       </div>
-      <div className="flex flex-row">
-        <div className="flex flex-col justify-center w-1/3 bg-gray-400 gap-4 p-6 aspect-square">
-          <h1 className="text-center text-2xl mb-8">
-            evaluare
-            <br />
-            psihologică
+      <div className="grid grid-cols-1 lg:grid-cols-3 mt-12">
+        <div className="flex flex-col justify-center bg-customGray gap-4 p-6 lg:py-12">
+          <h1 className="text-center text-4xl mb-8">
+            evaluare psihologică
           </h1>
           <p className="text-center">
             Ne cunoaștem și, o dată cu examinarea inițială, decidem împreună
@@ -32,23 +30,19 @@ export default function Servicii() {
           </p>
           <button className="underline">mai mult</button>
         </div>
-        <div className="flex flex-col justify-center w-1/3 bg-customPeach gap-4 p-6 aspect-square">
-          <h1 className="text-center text-2xl mb-8">neurofeedback</h1>
+        <div className="flex flex-col justify-center bg-customPeach gap-4 p-6 lg:py-12">
+          <h1 className="text-center text-4xl mb-8">neurofeedback</h1>
           <p className="text-center">
             Se poate folosi terapia neurofeedback pentru ameliorarea vieții și
             stării de sănătate dacă simptomele pe care le aveți indică aceasta.
           </p>
           <button className="underline">mai mult</button>
         </div>
-        <div className="flex flex-col justify-center w-1/3 bg-customGray gap-4 p-6 aspect-square">
-          <h1 className="text-center text-2xl mb-8">
-            evaluare
-            <br />
-            psihologică
-          </h1>
+        <div className="flex flex-col justify-center bg-customPiele gap-4 p-6 lg:py-12">
+          <h1 className="text-center text-4xl mb-8">psihoterapie</h1>
           <p className="text-center">
-            Ne cunoaștem și, o dată cu examinarea inițială, decidem împreună
-            asupra celui mai bun demers terapeutic.
+            Psihoterapia este întotdeauna recomandată, fiind una din cele mai
+            complexe metode de explorare în siguranță a persoanei noastre.
           </p>
           <button className="underline">mai mult</button>
         </div>

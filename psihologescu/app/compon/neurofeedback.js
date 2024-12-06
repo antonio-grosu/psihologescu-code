@@ -2,7 +2,7 @@ export default function Neurofeedback() {
   return (
     <div>
       <div className="flex flex-col items-center p-8 gap-4 bg-gray-100">
-        <h1 className="text-2xl text-orange-500">neurofeedback</h1>
+        <h1 className="text-5xl text-customOrange">neurofeedback</h1>
         <p className="w-5/6 text-center">
           Terapia neurofeedback a devenit tot mai populară în ultimii 20 de ani
           în Europa și acesta este termenul general utilizat pentru antrenarea

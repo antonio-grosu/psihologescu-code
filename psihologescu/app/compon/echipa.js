@@ -2,7 +2,7 @@ export default function Echipa() {
   return (
     <div>
       <div className="flex flex-col items-center p-8 gap-4 bg-gray-100">
-        <h1 className="text-2xl text-orange-500">echipa psihologesu</h1>
+        <h1 className="text-5xl text-customOrange">echipa psihologesu</h1>
         <p className="w-5/6 text-center">
           Serviciile Psihologescu sunt asigurate de către o mică echipă ce a
           început să se dezvolte recent. Cei doi psihoterapeuți, Adina Escu și,
