@@ -22,7 +22,7 @@ export default function Despre() {
           care ne aduce insprirație și noi resurse.{" "}
         </p>
         <p className="w-5/6 text-center">psihoterapeut Adina Escu</p>
-        <button className="underline">mai mult</button>
+        <a className="underline" href="/psihologescu/app/compon/despreext.js">mai mult</a>
       </div>
       <img src="./Poze/pozaTantiPsiholog.avif" className="my-12"></img>
     </div>
