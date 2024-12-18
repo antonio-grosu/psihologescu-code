@@ -1,12 +1,13 @@
-import Contact from "../compon/contact";
+import Contact from "../components/contact";
 
 export default function Despreext() {
   return (
     <div>
-      <div className="mt-12 flex justify-center">
-        <img src="/Poze/logoPsihologescu.avif"></img>
-        <img src="/Poze/pozaDesprePage.avif"></img>
-        <h1 className="text-5xl text-customOrange">despre</h1>
+      <div className="mt-12 flex flex-col justify-center items-center">
+        <img src="/Poze/logoPsihologescu.avif" className="w-1/2"></img>
+        <img src="/Poze/pozaDesprePage.avif" className="p-12"></img>
+        <div className="flex flex-col gap-4 items-center m-12">
+        <h1 className="text-5xl text-customOrange mb-12">despre</h1>
         <p className="text-center">
           Psihologescu este un concept venit din dorința de a aduce mai multă
           stare de bine. A apărut în anul 2010 la inițiativa Adinei Escu,
@@ -26,6 +27,7 @@ export default function Despreext() {
           care ne aduce insprirație și noi resurse.
         </p>
         <p className="text-center">psihoterapeut Adina Escu</p>
+        </div>
       </div>
       <div className="mt-12">
         <Contact />

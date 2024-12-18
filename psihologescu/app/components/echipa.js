@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Echipa() {
   return (
     <div>
@@ -15,7 +17,9 @@ export default function Echipa() {
           colaborează cu cei doi psihoterapeuți pentru ca mesajul nostru să
           ajungă la public sincer și corect.
         </p>
-        <button className="underline">mai mult</button>
+        <Link href="/echipaext" className="underline">
+          mai mult
+        </Link>
       </div>
       <img src="./Poze/pozaEchipa.avif" className="my-12"></img>
     </div>

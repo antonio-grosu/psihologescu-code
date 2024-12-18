@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Neurofeedback() {
   return (
     <div>
@@ -31,7 +33,9 @@ export default function Neurofeedback() {
           anxietate, depresie, atacuri de panică, vertij, tulburări de limbaj,
           deficiențe de atenție, AVC, tulburări din spectrul autist.
         </p>
-        <button className="underline">mai mult</button>
+        <Link href="/neurofeedbackext" className="underline">
+          mai mult
+        </Link>
       </div>
       <img src="./Poze/pozaNeurofeedback.avif" className="my-12"></img>
     </div>

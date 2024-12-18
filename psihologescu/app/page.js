@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Despre from "./compon/despre";
-import Echipa from "./compon/echipa";
-import Neurofeedback from "./compon/neurofeedback";
-import Servicii from "./compon/servicii";
-import Cui from "./compon/cui";
-import Review from "./compon/review";
-import Contact from "./compon/contact";
+import Despre from "./components/despre";
+import Echipa from "./components/echipa";
+import Neurofeedback from "./components/neurofeedback";
+import Servicii from "./components/servicii";
+import Cui from "./components/cui";
+import Review from "./components/review";
+import Contact from "./components/contact";
 
 export default function Home() {
   return (

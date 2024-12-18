@@ -26,7 +26,7 @@ export default function Despre() {
         <p className="w-5/6 text-center">psihoterapeut Adina Escu</p>
         <Link href="/despreext" className="underline">mai mult</Link>
       </div>
-      <image src="./Poze/pozaTantiPsiholog.avif" className="my-12"></image>
+      <img src="./Poze/pozaTantiPsiholog.avif" className="my-12"></img>
     </div>
   );
 }
