@@ -4,24 +4,24 @@ export default function PersonalTerms() {
   return (
     <div className="flex flex-col gap-16 justyfy-center items-center">
       <div className="mt-12 w-full flex flex-col justify-center items-center">
-        <img src="/Poze/logoPsihologescu.avif" className="w-1/3"></img>
+        <img src="/Poze/logoPsihologescu.avif" className="w-1/2 md:w-1/3"></img>
         <p className="text-gray-400 text-sm">
           găsește-ți echilibrul prin terapie
         </p>
       </div>
-      <div className="w-1/2 my-20 text-lg gap-8 flex flex-col justify-center items-center">
+      <div className="w-full px-8 md:w-1/2 my-20 text-lg gap-8 flex flex-col justify-center items-center">
         <p className="text-center">
           Aici poți afla tot ce e nevoie să știi despre cookie-urile utilizate
           de www.psihologescu.ro și despre politica noastră de confidențialitate
           a datelor personale prelucrate pe site. ​
         </p>
-        <p className="flex gap-1 text-center">
+        <p className="text-center">
           Accesează mai jos informații despre{" "}
           <a href="/cookies" className="text-orange-500">
             cookie-uri
           </a>{" "}
           sau
-          <a href="/policy" className="text-orange-500">
+          <a href="/policy" className="ml-1 text-orange-500">
             politica de confidențialitate.
           </a>
         </p>
@@ -32,7 +32,7 @@ export default function PersonalTerms() {
         </h1>
       </div>
       <div className="flex flex-col gap-20 items-center">
-        <div className="flex flex-col gap-4 items-start w-1/2">
+        <div className="flex flex-col gap-4 items-start w-full px-8 md:w-1/2">
           <h2 className="text-xl font-bold">1. Introducere</h2>
           <p className="text-base mb-8">
             Prezenta Politică privind fișierele cookies se aplică tuturor
