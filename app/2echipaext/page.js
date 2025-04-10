@@ -6,19 +6,19 @@ export default function Echipaext() {
     <>
       <Navbar />
       <div className="pt-20">
-        <div className="mt-12 flex flex-col items-center m-8">
-          <img src="/Poze/logoPsihologescu.avif" className="w-1/2"></img>
+        <div className="mt-12 flex flex-col items-center m-8 gap-2">
+          <img src="/Poze/logoPsihologescu.avif" className="md:w-1/3 w-4/5"></img>
           <p className="text-gray-400 text-sm">
             găsește-ți echilibrul prin terapie
           </p>
-          <h1 className="text-5xl text-customOrange mt-20 mb-8">echipa</h1>
-          <p className="text-center w-11/12 text-sm">
+          <h4 className="text-5xl text-customOrange mt-20 mb-8">echipa</h4>
+          <p className="text-center w-3/4 text-sm">
             Serviciile Psihologescu sunt asigurate de către o mică echipă ce a
             început să se dezvolte recent. Cei doi psihoterapeuți, Adina Escu și,
             Arina Cismaru se ocupă de ședințele de terapie și de relația directă
             cu fiecare client pentru a asigura succesul demersului terapeutic.
           </p>
-          <p className="text-center w-11/12 text-sm">
+          <p className="text-center w-3/4 text-sm">
             În ceea ce privește cercetarea, comunicarea, prezența în mediul online
             și social media, echipa Psihologescu are membri de încredere care
             colaborează cu cei doi psihoterapeuți pentru ca mesajul nostru să
@@ -27,16 +27,16 @@ export default function Echipaext() {
         </div>
         <div className="flex flex-col">
           <div className="flex flex-row">
-            <div className="flex flex-col items-center w-2/3 p-8">
-              <h2 className="text-2xl mb-4 text-customOrange">adina escu</h2>
+            <div className="flex flex-col items-center w-5/12 p-8">
+              <h2 className="md:text-xl text-lg mb-4 text-customOrange">adina escu</h2>
               <img src="/Poze/pozaAdinaEscu.avif" className="w-1/2"></img>
-              <p className="text-center w-1/2 mt-8">
+              <p className="text-center w-1/2 mt-8 md:text-base text-xs">
                 psihoterapeut și psiholog clinician, absolventă a{" "}
                 <em>Clinical course in neurofeedback/EEG biofeedback</em> la
                 Hamburg
               </p>
             </div>
-            <div className="flex flex-col w-2/3 mt-10 py-8 pr-20 text-sm">
+            <div className="flex flex-col w-6/12 mt-10 py-8 pr-30 md:text-sm text-xs">
               <p>
                 Este printre primii specialisti neurofeedback din tara, absolvind
                 cursul metoda Othmer si colaboreaza ca trainer in cadrul
@@ -85,28 +85,27 @@ export default function Echipaext() {
             </div>
           </div>
           <div className="flex flex-row">
-            <div className="flex flex-col items-center w-2/3 p-8">
-              <h2 className="text-2xl mb-4 text-customOrange">arina cismaru</h2>
+            <div className="flex flex-col items-center w-5/12 p-8">
+              <h2 className="md:text-xl text-lg mb-4 text-customOrange">arina cismaru</h2>
               <img src="/Poze/pozaArinaCismaru.avif" className="w-1/2"></img>
-              <p className="text-center w-1/2 mt-8">
+              <p className="text-center w-1/2 mt-8 md:text-base text-xs">
                 psiholog clinician in supervizare; în formare în psihoterapie
-                intergrativă, absolventă a Clinical course in neurofeedback/EEG
-                biofeedback
+                intergrativă, absolventă a <em>Clinical course in neurofeedback/EEG biofeedback</em>     
               </p>
             </div>
-            <div className="flex flex-col justify-center w-2/3 mt-10 py-8 pr-20 text-sm">
+            <div className="flex flex-col w-6/12 md:mt-10 mt-3 md:py-28 py-16 pr-30 md:text-sm text-xs">
               <p>
                 Este membru al British Psychological Society (B.P.S.) din Marea
                 Britanie.
               </p>
               <p className="mt-4">
                 Arina și-a completat studiile universitare în Marea Britanie. Este
-                specializată în B.S.c - Bachelor of Science in Psychology la
+                specializată în <em>B.S.c - Bachelor of Science in Psychology</em> la
                 University of Manchester.
               </p>
               <p className="mt-4">
-                De asemnea, este absolventă a programului de master M.S.c-Master
-                of Science of Mental Health Studies oferit de către King’s College
+                De asemnea, este absolventă a programului de master <em>M.S.c-Master
+                of Science of Mental Health Studies</em> oferit de către King’s College
                 din Londra.
               </p>
               <p className="mt-4">
