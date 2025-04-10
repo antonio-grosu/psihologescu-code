@@ -12,7 +12,7 @@ export default function Post9() {
       <h1 className="mt-4 text-2xl text-customOrange">
         Cum funcționează anxietatea de performanță și care sunt măștile ei?
       </h1>
-      <p className="text-sm mt-2 truncate overflow-hidden whitespace-nowrap mb-8">
+      <p className="text-sm mt-2 truncate overflow-hidden hidden md:block whitespace-nowrap mb-8">
         Despre termenul de anxietate am auzit cu toții și mai mult sau mai puțin
         înțelegem cum funcționează, mulți dintre noi o asociem cu stresul. Iar
         atunci când auzi de anxietate de performanță, îți poți da seama din

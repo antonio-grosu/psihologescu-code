@@ -12,7 +12,7 @@ export default function Post3() {
       <h1 className="mt-4 text-2xl text-customOrange">
         Ce facem după ce dispare flacăra de la început?
       </h1>
-      <p className="text-sm mt-2 truncate overflow-hidden whitespace-nowrap mb-8">
+      <p className="text-sm mt-2 truncate overflow-hidden hidden md:block whitespace-nowrap mb-8">
         Cu toții știm că atunci când ne îndrăgostim de cineva, nu doar lumea
         capătă alt sens, însă și lumea noastră interioară devine populată de noi
         senzații și emoții puternice. Ne gândim tot timpul la persoana de care

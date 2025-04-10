@@ -12,7 +12,7 @@ export default function Post4() {
       <h1 className="mt-4 text-2xl text-customOrange">
         Când încercăm să controlăm partenerul în public
       </h1>
-      <p className="text-sm mt-2 truncate overflow-hidden whitespace-nowrap mb-8">
+      <p className="text-sm mt-2 truncate overflow-hidden hidden md:block whitespace-nowrap mb-8">
         Dincolo de intimitatea obișnuită din interiorul unei relații de cuplu,
         există și felul în care entitatea cuplului se manifestă în societate, în
         grupuri. <strong>Atunci când ne aflăm într-o relație de cuplu cu cineva, noi

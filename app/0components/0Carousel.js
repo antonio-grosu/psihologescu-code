@@ -23,6 +23,7 @@ export default function Carousel({
     return () => clearInterval(slideInterval);
   }, []);
 
+
   return (
     <div className="overflow-hidden relative w-full">
       <div
@@ -30,7 +31,7 @@ export default function Carousel({
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {children.map((child, index) => (
-          <div key={index} className="w-full flex-shrink-0">
+          <div key={index} className="w-full flex-shrink-0 aspect-[16/9]">
             {child}
           </div>
         ))}
@@ -39,7 +40,7 @@ export default function Carousel({
       <div className="absolute inset-0 flex items-center justify-between">
         <button
           onClick={prevSlide}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-customOrange opacity-70 text-black rounded-full hover:opacity-90"
+          className="absolute left-4 md:top-1/2 top-1/3 transform -translate-y-1/2 bg-customOrange opacity-70 text-black rounded-full hover:opacity-90"
         >
           <img
             src="/icons/left-arrow.svg"
@@ -49,7 +50,7 @@ export default function Carousel({
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-customOrange opacity-70 text-black rounded-full hover:opacity-90"
+          className="absolute right-4 md:top-1/2 top-1/3 transform -translate-y-1/2 bg-customOrange opacity-70 text-black rounded-full hover:opacity-90"
         >
           <img
             src="/icons/right-arrow.svg"
@@ -58,8 +59,8 @@ export default function Carousel({
           />
         </button>
       </div>
-      <div className="absolute bottom-2 right-0 left-0">
-        <div className="flex items-center justify-center gap-2">
+      <div className="absolute bottom-0 right-0 left-0">
+        <div className="flex items-center justify-center gap-3">
           {children.map((_, i) => (
             <div
               key={i}
