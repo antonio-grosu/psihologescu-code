@@ -17,7 +17,7 @@ export default function Despre() {
   return (
     <div>
       <div className="flex flex-col items-center p-8 gap-4 bg-gray-100">
-        <img src="/Poze/logoPsihologescu.avif" className="md:w-1/2 w-full" alt="Logo Psihologescu" />
+        <img src="/Poze/logoPsihologescu.avif" className="md:w-1/3 w-full" alt="Logo Psihologescu" />
         <p className="text-gray-400 text-sm">găsește-ți echilibrul prin terapie</p>
 
         <div className="md:w-5/6 w-full">
