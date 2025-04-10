@@ -1,3 +1,5 @@
+'use client'; // required for Framer Motion to work with Next.js App Router
+import { motion } from "framer-motion";
 import Contact from "../0components/7contact";
 import Navbar from "../0components/8navbar";
 
@@ -7,7 +9,14 @@ export default function Echipaext() {
       <Navbar />
       <div className="pt-20">
         <div className="mt-12 flex flex-col items-center m-8 gap-2">
-          <img src="/Poze/logoPsihologescu.avif" className="md:w-1/3 w-4/5"></img>
+          <motion.img
+            src="/Poze/logoPsihologescu.avif"
+            className="md:w-1/3 w-full"
+            alt="Logo Psihologescu"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          />
           <p className="text-gray-400 text-sm">
             găsește-ți echilibrul prin terapie
           </p>
