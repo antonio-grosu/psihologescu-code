@@ -40,24 +40,26 @@ export default function Carousel({
       <div className="absolute inset-0 flex items-center justify-between">
         <button
           onClick={prevSlide}
-          className="absolute left-4 md:top-1/2 top-1/3 transform -translate-y-1/2 bg-customOrange opacity-70 text-black rounded-full hover:opacity-90"
+          className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-customOrange opacity-70 text-black rounded-full p-2 hover:opacity-90"
         >
           <img
             src="/icons/left-arrow.svg"
             alt="left arrow"
-            className="w-6 h-6"
+            className="w-5 h-5 md:w-6 md:h-6"
           />
         </button>
+
         <button
           onClick={nextSlide}
-          className="absolute right-4 md:top-1/2 top-1/3 transform -translate-y-1/2 bg-customOrange opacity-70 text-black rounded-full hover:opacity-90"
+          className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-customOrange opacity-70 text-black rounded-full p-2 hover:opacity-90"
         >
           <img
             src="/icons/right-arrow.svg"
             alt="right arrow"
-            className="w-6 h-6"
+            className="w-5 h-5 md:w-6 md:h-6"
           />
         </button>
+
       </div>
       <div className="absolute bottom-0 right-0 left-0">
         <div className="flex items-center justify-center gap-3">

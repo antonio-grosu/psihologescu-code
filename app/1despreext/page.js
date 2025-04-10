@@ -23,7 +23,7 @@ export default function Despreext() {
           <img src="/Poze/pozaDesprePage.avif" className="pt-12 md:w-5/6 w-full" />
           <div className="flex flex-col gap-6 items-center m-20">
             <div className="w-full text-left">
-              <h4 className="text-4xl text-customOrange mb-12 ml-24">despre</h4>
+              <h4 className="text-4xl text-customOrange px-8 mb-12 md:ml-24">despre</h4>
             </div>
             <p className="text-center text-sm max-w-3xl">
               Psihologescu este un concept venit din dorința de a aduce mai multă

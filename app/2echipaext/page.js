@@ -35,8 +35,8 @@ export default function Echipaext() {
           </p>
         </div>
         <div className="flex flex-col">
-          <div className="flex flex-row">
-            <div className="flex flex-col items-center w-5/12 p-8">
+          <div className="flex md:flex-row flex-col">
+            <div className="flex flex-col items-center md:w-5/12 p-8">
               <h2 className="md:text-xl text-lg mb-4 text-customOrange">adina escu</h2>
               <img src="/Poze/pozaAdinaEscu.avif" className="w-1/2"></img>
               <p className="text-center w-1/2 mt-8 md:text-base text-xs">
@@ -45,7 +45,7 @@ export default function Echipaext() {
                 Hamburg
               </p>
             </div>
-            <div className="flex flex-col w-6/12 mt-10 py-8 pr-30 md:text-sm text-xs">
+            <div className="flex flex-col md:w-6/12 w-full  md:mt-10 py-8 pl-10 pr-30 md:text-sm text-xs">
               <p>
                 Este printre primii specialisti neurofeedback din tara, absolvind
                 cursul metoda Othmer si colaboreaza ca trainer in cadrul
@@ -93,8 +93,8 @@ export default function Echipaext() {
               </p>
             </div>
           </div>
-          <div className="flex flex-row">
-            <div className="flex flex-col items-center w-5/12 p-8">
+          <div className="flex md:flex-row flex-col">
+            <div className="flex flex-col items-center md:w-5/12 p-8">
               <h2 className="md:text-xl text-lg mb-4 text-customOrange">arina cismaru</h2>
               <img src="/Poze/pozaArinaCismaru.avif" className="w-1/2"></img>
               <p className="text-center w-1/2 mt-8 md:text-base text-xs">
@@ -102,7 +102,7 @@ export default function Echipaext() {
                 intergrativă, absolventă a <em>Clinical course in neurofeedback/EEG biofeedback</em>     
               </p>
             </div>
-            <div className="flex flex-col w-6/12 md:mt-10 mt-3 md:py-28 py-16 pr-30 md:text-sm text-xs">
+            <div className="flex flex-col md:w-6/12 w-full pl-10 md:mt-10 md:py-28 py-16 pr-30 md:text-sm text-xs">
               <p>
                 Este membru al British Psychological Society (B.P.S.) din Marea
                 Britanie.

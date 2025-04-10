@@ -68,7 +68,7 @@ export default function Navbar() {
       {/* Mobile dropdown menu */}
       {menuOpen && (
         <div className="md:hidden bg-white px-6 py-5 text-sm font-normal shadow">
-          <div className="flex flex-wrap gap-x-6 gap-y-1 justify-start">
+          <div className="flex flex-col gap-4">
             <Link href="/" onClick={toggleMenu}>acasă</Link>
             <Link href="/1despreext" onClick={toggleMenu}>despre</Link>
             <Link href="/2echipaext" onClick={toggleMenu}>echipa</Link>
