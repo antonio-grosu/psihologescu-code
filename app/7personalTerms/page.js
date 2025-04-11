@@ -1,4 +1,4 @@
-import Despre from "../0components/1despre";
+import Contact from "../0components/7contact";
 
 export default function PersonalTerms() {
   return (
@@ -187,6 +187,7 @@ export default function PersonalTerms() {
       </div>
 
       <div></div>
+      <Contact />
     </div>
   );
 }
