@@ -2,18 +2,19 @@ import Image from "next/image";
 
 export default function BlogCardComponent({ image, heading, text }) {
   return (
-    <div className="flex w-full gap-12 px-8 py-10 border border-solid border-black/10">
+    <div className="flex flex-col lg:flex-row w-full lg:gap-12 px-4 lg:px-8 py-10 border border-solid border-black/10">
+      {/* aici tin poz */}
       <div
-        className={`w-1/2 bg-cover bg-center min-h-[500px]`}
-        style={{ backgroundImage: `url("/PozeCarousel/poza1.webp")` }}
+        className={`w-full lg:w-1/2 bg-cover bg-center min-h-[500px]`}
+        style={{ backgroundImage: `url("${image}")` }}
       ></div>
       {/* aici tin chestiile din dreapta */}
-      <div className="flex w-1/2 flex-col gap-12 relative">
+      <div className="flex w-full lg:w-1/2 flex-col gap-12 relative">
         {" "}
         {/* aici tin chestiile din dreapta sus, poza psihologescu si data */}{" "}
         <div className="flex gap-4 text-lg">
           {" "}
-          <Image src="" width={20} height={20}></Image>{" "}
+          {/* <Image src="" width={20} height={20}></Image>{" "} */}
           <div className="flex flex-col">
             <p>psihologescu</p>
             {/* aici trebuie sa schimb cu data cand a fost adaugat component */}
@@ -26,7 +27,7 @@ export default function BlogCardComponent({ image, heading, text }) {
           </h1>
           <p className="text-xl">{text}</p>
         </div>
-        <div className="absolute bottom-0 w-full border-t border-solid border-black/40 pt-10">
+        <div className="lg:absolute bottom-0 w-full border-t border-solid border-black/40 pt-10">
           {/* aici trebuie sa schimb cu comentariile actuale */}
           <p>0 comentarii</p>
         </div>
