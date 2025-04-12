@@ -1,5 +1,7 @@
+"use client";
 import Contact from "../0components/7contact";
 import BlogCardComponent from "../0components/8BlogCardComponent";
+import { useState } from "react";
 import Filter from "../0components/9Filter";
 
 const blogData = [
@@ -7,39 +9,43 @@ const blogData = [
     image: "/PozeCarousel/poza1.webp",
     heading: "Cum hranim relatia de cuplu prin practica recunostineti",
     text: "Poate ca mare parte dintre noi am fost invatati sa credem ca relatiile curg de la sine si cumva sa lasam in afara controlului nostru...",
-    labels: ["cuplu", "recunoștință"],
+    labels: ["cuplu", "recunoștință", "all"],
   },
   {
     image: "/PozeCarousel/poza3.webp",
     heading: "Cum hrănim relația de cuplu",
     text: "Text scurt...",
-    labels: ["cuplu", "recunoștință"],
+    labels: ["psiho", "cuplu", "recunoștință", "all"],
   },
   {
     image: "/PozeCarousel/poza2.webp",
     heading: "Gestionarea anxietății",
     text: "Text scurt...",
-    labels: ["anxietate", "respirație"],
+    labels: ["anxietate", "psiho", "respirație", "all"],
   },
 ];
 
 export default function Blog() {
+  const [option, setOption] = useState("all");
   return (
-    <div className="flex flex-col items-center px-8 md:px-40 py-40">
-      <Filter />
-      {blogData.map((value, index) => {
-        console.log(value.image);
-        return (
-          <>
-            <BlogCardComponent
-              key={index}
-              image={value.image}
-              heading={value.heading}
-              text={value.text}
-            />
-          </>
-        );
-      })}
+    <div className="flex flex-col items-center px-20 py-40">
+      <Filter option={option} setOption={setOption} />
+      <div className="mx-8 w-full">
+        {blogData.map((value, index) => {
+          return (
+            <>
+              {value.labels.includes(option) && (
+                <BlogCardComponent
+                  key={index}
+                  image={value.image}
+                  heading={value.heading}
+                  text={value.text}
+                />
+              )}
+            </>
+          );
+        })}
+      </div>
       {/* <Contact /> */}
     </div>
   );
