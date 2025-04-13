@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function BlogCardComponent({ image, heading, text }) {
   return (
-    <div className="flex flex-col lg:flex-row w-full lg:gap-12 px-4 lg:px-8 py-10 border border-solid border-black/10">
+    <div className="flex flex-col max-w-[1800px] lg:flex-row w-full lg:gap-12 px-4 lg:px-8 lg:py-10 pb-10 border border-solid border-black/10">
       {/* aici tin poz */}
       <div
-        className={`w-full lg:w-1/2 bg-cover bg-center min-h-[500px]`}
+        className={`w-full lg:w-1/2 bg-cover bg-center md:min-h-[500px] min-h-[300px]`}
         style={{ backgroundImage: `url("${image}")` }}
       ></div>
       {/* aici tin chestiile din dreapta */}
