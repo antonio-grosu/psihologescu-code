@@ -1,4 +1,5 @@
 "use client";
+import Filter2 from "../0components/10Filter2";
 import Contact from "../0components/7contact";
 import BlogCardComponent from "../0components/8BlogCardComponent";
 import { useState } from "react";
@@ -29,7 +30,8 @@ export default function Blog() {
   const [option, setOption] = useState("all");
   return (
     <div className="flex flex-col gap-12 items-center px-20 py-40">
-      <Filter option={option} setOption={setOption} />
+      {/* <Filter option={option} setOption={setOption} /> */}
+      <Filter2 option={option} setOption={setOption} />
       <div className="mx-8 w-full flex flex-col items-center gap-12">
         {blogData.map((value, index) => {
           return (
