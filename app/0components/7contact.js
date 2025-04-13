@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Contact() {
   return (
     <div className="mt-12 w-full xl:w-2/3 mb-20">
@@ -56,7 +57,9 @@ export default function Contact() {
               </div>
               <div className="flex flex-row items-center gap-8">
                 <img src="/Poze/mail.avif" className="w-16 h-16" />
-                psihologescu@gmail.com
+                <Link href="mailto:psihologescu@gmail.com-etc">
+                  psihologescu@gmail.com
+                </Link>
               </div>
             </div>
           </div>
@@ -64,7 +67,7 @@ export default function Contact() {
           <div className="flex w-full h-auto bg-gray-200"></div>
         </div>
         {/* asta e divul care tine tot ce este jos */}
-        <div className="flex flex-row-reverse w-full mt-12 text-xl gap-16 h-full">
+        <div className="flex flex-row-reverse w-full mt-12 justify-between text-xl gap-16 h-full">
           {/* asta este divul care tine jos dreapta */}
           <div className="flex flex-col gap-8">
             <p className="2xl:line-clamp-2 w-full 2xl:w-3/4">
@@ -75,7 +78,7 @@ export default function Contact() {
               <form className="border-orange-500 border w-full border-solid">
                 <div className="w-full flex justify-between">
                   <input
-                    className="placeholder-orange-500/40 w-full px-8 py-4"
+                    className="focus:outline-none placeholder-orange-500/40 w-full px-8 py-4"
                     type="mail"
                     name="mail"
                     id="mail"
@@ -156,7 +159,10 @@ export default function Contact() {
           </div>
           <div className="flex flex-row items-center gap-8">
             <img src="/Poze/mail.avif" className="w-12 h-12" />
-            psihologescu@gmail.com
+            <Link href="mailto:psihologescu@gmail.com-etc">
+              {" "}
+              psihologescu@gmail.com
+            </Link>
           </div>
         </div>
         <div className="flex flex-col w-full">
@@ -180,9 +186,9 @@ export default function Contact() {
           </p>
           <div className="w-full">
             <form className="border-orange-500 border w-full border-solid">
-              <div className="w-full flex justify-between">
+              <div className="w-full flex flex-col lg:flex-row justify-between">
                 <input
-                  className="placeholder-orange-500/40 w-full px-8 py-4"
+                  className="focus:outline-none placeholder-orange-500/40 w-full px-8 py-4"
                   type="mail"
                   name="mail"
                   id="mail"
@@ -190,7 +196,7 @@ export default function Contact() {
                 ></input>
                 <button
                   type="submit"
-                  className="bg-orange-500 px-8 text-white w-fit whitespace-nowrap py-4"
+                  className="bg-orange-500 px-8 text-white w-full lg:w-fit whitespace-nowrap py-4"
                 >
                   ma abonez
                 </button>
