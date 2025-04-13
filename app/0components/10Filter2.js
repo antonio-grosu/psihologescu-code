@@ -13,25 +13,48 @@ export default function Filter2({ option, setOption }) {
     <div className="w-full flex flex-col relative z-10">
       <div className="w-full items-center flex justify-between border border-solid border-black/40">
         <p className="text-xl ml-6">{chosen}</p>
-        <button className="cursor-pointer p-6" onClick={onClick}>
-          <svg
-            className="w-6 h-6 text-gray-800 dark:text-white"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="black"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="m19 9-7 7-7-7"
-            />
-          </svg>
-        </button>
+        {!displayOptions && (
+          <button className="cursor-pointer p-6" onClick={onClick}>
+            <svg
+              className="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="black"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="m19 9-7 7-7-7"
+              />
+            </svg>
+          </button>
+        )}
+        {displayOptions && (
+          <button className="cursor-pointer p-6" onClick={onClick}>
+            <svg
+              className="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="black"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="m5 15 7-7 7 7"
+              />
+            </svg>
+          </button>
+        )}
       </div>
       {/* asta este divul care va tine optiunile */}
       {displayOptions && (
