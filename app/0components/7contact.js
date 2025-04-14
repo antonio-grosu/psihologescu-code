@@ -1,13 +1,13 @@
 import Link from "next/link";
 export default function Contact() {
   return (
-    <div className="mt-12 w-full xl:w-2/3 mb-20">
+    <div className="mt-12 w-full flex flex-col items-center justify-center mb-20">
       <h1 className="text-red-500 text-5xl mb-10 xl:mb-20 text-center pt-12">
         contact
       </h1>
       {/* asta este tot pentru ecrane xl */}
       {/* asta este ala mare care contine tot contactul */}
-      <div className="hidden xl:flex flex-col p-8 gap-4 w-full h-full">
+      <div className="hidden xl:flex flex-col w-2/3 p-8 gap-4 h-full">
         {/* asta este ala care tine toata partea de sus */}
         <div className="flex flex-col text-3xl gap-12 items-between text-xl">
           {/* asta este ala care tine partea sus stanga */}
