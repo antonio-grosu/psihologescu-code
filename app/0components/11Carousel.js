@@ -5,7 +5,7 @@ import CarouselElement from "./12CarouselElemet";
 export default function Carousel() {
   let cercuri = [];
   let carouselText = [
-    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.",
+    "T.H. a venit la neurofeedback având dificultăți în privința limbajului expresiv, opoziționism sș momente de rigiditate comportamentală. De asemenea, îi era greu să se adapteze la mediu din cauza limbajului sărac și a timidității.",
     "da",
     "Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.",
     "cacat",
@@ -30,11 +30,11 @@ export default function Carousel() {
 
   return (
     <div className="w-full bg-neutral-100 py-16 h-[800px] flex justify-between items-center">
-      <div className="min-w-16 min-h-16 ml-8">
+      <div className="md:min-w-16 min-w-8 min-h-8 md:min-h-16 ml-4 md:ml-8">
         {displayOption > 0 && (
           <svg
             onClick={switchLeft}
-            className="w-16 h-16 cursor-pointer text-gray-800 dark:text-white"
+            className="md:w-16 md:h-16 w-8 h-8 cursor-pointer text-black fill-current opacity-100 hover:text-black/40 transition-opacity duration-300"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="80"
@@ -43,7 +43,7 @@ export default function Carousel() {
             viewBox="0 0 24 24"
           >
             <path
-              stroke="black"
+              stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
@@ -54,14 +54,19 @@ export default function Carousel() {
       </div>
       <div className="w-full flex flex-col items-center justify-center relative h-full">
         {/* aici tin elementele din carusel */}
-        <div className={`w-full flex`}>
+        <div className={`w-full h-full relative`}>
           {carouselText.map((value, index) => {
             return (
               <div
                 key={index}
-                className={`w-full ${
-                  displayOption == index ? "flex" : "hidden"
-                }`}
+                // className={`w-full ${
+                //   displayOption == index ? "flex" : "hidden"
+                // }`}
+                className={`w-full h-full absolute top-0 left-0 transition-opacity duration-500 ease-in-out ${
+                  displayOption === index
+                    ? "opacity-100 z-10"
+                    : "opacity-0 z-0 pointer-events-none"
+                } flex items-center `}
               >
                 <CarouselElement text={value} />
               </div>
@@ -93,7 +98,7 @@ export default function Carousel() {
             } else {
               return (
                 <svg
-                  className="w-4 h-4 text-gray-800 dark:text-white"
+                  className="w-4 h-4 text-black fill-current hover:text-black/40"
                   key={value}
                   id={value}
                   xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +106,7 @@ export default function Carousel() {
                   viewBox="0 0 24 24"
                 >
                   <path
-                    fill="black"
+                    fill="currentColor"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
@@ -113,11 +118,11 @@ export default function Carousel() {
           })}
         </div>
       </div>
-      <div className="min-w-16 min-h-16 mr-8">
+      <div className="md:min-w-16 md:min-h-16 min-h-8 min-w-8 mr-4 md:mr-8">
         {displayOption < carouselText.length - 1 && (
           <svg
             onClick={switchRight}
-            className="w-16 h-16 cursor-pointer text-gray-800 dark:text-white"
+            className="md:w-16 w-8 h-8 md:h-16 cursor-pointer text-black fill-current opacity-100 hover:text-black/40 transition-opacity duration-300"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="80"
@@ -126,7 +131,7 @@ export default function Carousel() {
             viewBox="0 0 24 24"
           >
             <path
-              stroke="black"
+              stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"

@@ -30,8 +30,7 @@ const blogData = [
 export default function Blog() {
   const [option, setOption] = useState("all");
   return (
-    <div className="flex flex-col gap-12 items-center px-20 py-40">
-      <Carousel text="da" />
+    <div className="flex flex-col gap-12 items-center px-8 md:px-20 py-40">
       <Filter2 option={option} setOption={setOption} />
       <div className="mx-8 w-full flex flex-col items-center gap-12">
         {blogData.map((value, index) => {
