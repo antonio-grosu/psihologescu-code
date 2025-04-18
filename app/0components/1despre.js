@@ -1,3 +1,5 @@
+'use client'; // required for Framer Motion to work with Next.js App Router
+import { motion } from "framer-motion";
 import Link from "next/link";
 import Carousel from "./0Carousel";
 import Post1 from "../6firstCarousel/Post1/page";
@@ -28,16 +30,16 @@ export default function Despre() {
   return (
     <div>
       <div className="flex flex-col items-center p-8 gap-4 bg-gray-100">
-        <img
+        <motion.img
           src="/Poze/logoPsihologescu.avif"
-          className="w-1/2"
+          className="md:w-1/3 w-full"
           alt="Logo Psihologescu"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
         />
-        <p className="text-gray-400 text-sm">
-          găsește-ți echilibrul prin terapie
-        </p>
-
-        <div className="w-5/6">
+        <p className="text-gray-400 text-sm">găsește-ți echilibrul prin terapie</p>
+        <div className="md:w-5/6 w-full">
           <Carousel autoSlide={true}>
             {posts.map((Post, index) => (
               <Post key={index} />
@@ -45,7 +47,7 @@ export default function Despre() {
           </Carousel>
         </div>
 
-        <h1 className="text-5xl text-customOrange">despre psihologesu</h1>
+        <h1 className="text-5xl text-customOrange pt-8">despre psihologescu</h1>
         <p className="w-5/6 text-center">
           Psihologescu este un concept venit din dorința de a aduce mai multă
           stare de bine.

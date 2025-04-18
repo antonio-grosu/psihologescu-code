@@ -12,7 +12,7 @@ export default function Post5() {
       <h1 className="mt-4 text-2xl text-customOrange">
         Sindromul Asperger: ce este și cum îl recunoaștem?
       </h1>
-      <p className="text-sm mt-2 truncate overflow-hidden whitespace-nowrap mb-8">
+      <p className="text-sm mt-2 truncate overflow-hidden hidden md:block whitespace-nowrap mb-8">
         După cum spuneam și în articolul dedicat ADHD-ului, în anii din trecutul
         mai îndepărtat, copiii erau deseori considerați obraznici, neliniștiți
         și poate chiar și jigniți, fără ca cineva să își pună întrebarea dacă ar

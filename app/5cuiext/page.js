@@ -1,4 +1,5 @@
 import Contact from "../0components/7contact";
+import Navbar from "../0components/8navbar";
 
 export default function Cuiext() {
   return (

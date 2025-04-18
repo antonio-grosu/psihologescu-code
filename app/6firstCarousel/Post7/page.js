@@ -12,7 +12,7 @@ export default function Post7() {
       <h1 className="mt-4 text-2xl text-customOrange">
         Ce rol are somnul în viața noastră?
       </h1>
-      <p className="text-sm mt-2 truncate overflow-hidden whitespace-nowrap mb-8">
+      <p className="text-sm mt-2 truncate overflow-hidden hidden md:block whitespace-nowrap mb-8">
         Tot ceea ce este uzat prea mult, se strică. O haină pe care am folosit-o
         prea mult, se scămoșează și deși ne place în continuare, nu o mai putem
         folosi. Telefonul neîncărcat la timp, își pierde bateria și nu îl mai

@@ -12,7 +12,7 @@ export default function Post6() {
       <h1 className="mt-4 text-2xl text-customOrange">
         Ce este ADHD-ul și cum îl recunoaștem?
       </h1>
-      <p className="text-sm mt-2 truncate overflow-hidden whitespace-nowrap mb-8">
+      <p className="text-sm mt-2 truncate overflow-hidden hidden md:block whitespace-nowrap mb-8">
         Tulburarea de tip deficit de atenție și hiperactivitate (ADHD)-ul este
         una din cele mai cunoscute tulburări la copii în prezent.
       </p>
