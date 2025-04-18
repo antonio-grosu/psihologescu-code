@@ -11,14 +11,31 @@ import Post8 from "../6firstCarousel/Post8/page";
 import Post9 from "../6firstCarousel/Post9/page";
 import Post10 from "../6firstCarousel/Post10/page";
 
-const posts = [Post1, Post2, Post3, Post4, Post5, Post6, Post7, Post8, Post9, Post10];
+const posts = [
+  Post1,
+  Post2,
+  Post3,
+  Post4,
+  Post5,
+  Post6,
+  Post7,
+  Post8,
+  Post9,
+  Post10,
+];
 
 export default function Despre() {
   return (
     <div>
       <div className="flex flex-col items-center p-8 gap-4 bg-gray-100">
-        <img src="/Poze/logoPsihologescu.avif" className="w-1/2" alt="Logo Psihologescu" />
-        <p className="text-gray-400 text-sm">găsește-ți echilibrul prin terapie</p>
+        <img
+          src="/Poze/logoPsihologescu.avif"
+          className="w-1/2"
+          alt="Logo Psihologescu"
+        />
+        <p className="text-gray-400 text-sm">
+          găsește-ți echilibrul prin terapie
+        </p>
 
         <div className="w-5/6">
           <Carousel autoSlide={true}>
@@ -30,18 +47,27 @@ export default function Despre() {
 
         <h1 className="text-5xl text-customOrange">despre psihologesu</h1>
         <p className="w-5/6 text-center">
-          Psihologescu este un concept venit din dorința de a aduce mai multă stare de bine.
+          Psihologescu este un concept venit din dorința de a aduce mai multă
+          stare de bine.
         </p>
         <p className="w-5/6 text-center">
-          Ne bazăm pe două principii: descoperirea profundă a persoanei și folosirea neuroștiințelor.
+          Ne bazăm pe două principii: descoperirea profundă a persoanei și
+          folosirea neuroștiințelor.
         </p>
         <p className="w-5/6 text-center">
-          Ceea ce este frumos de observat la oameni este faptul că fiecare dintre noi este unic.
+          Ceea ce este frumos de observat la oameni este faptul că fiecare
+          dintre noi este unic.
         </p>
         <p className="w-5/6 text-center">psihoterapeut Adina Escu</p>
-        <Link href="/1despreext" className="underline">mai mult</Link>
+        <Link href="/1despreext" className="underline">
+          mai mult
+        </Link>
       </div>
-      <img src="./Poze/pozaTantiPsiholog.avif" className="my-12" alt="Poza psiholog" />
+      <img
+        src="./Poze/pozaTantiPsiholog.avif"
+        className="my-12"
+        alt="Poza psiholog"
+      />
     </div>
   );
 }
