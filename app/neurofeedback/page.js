@@ -1,16 +1,46 @@
-import React from "react";
-import Contact from "../0components/7contact";
+"use client";
 
+import React from "react";
+import { motion } from "framer-motion";
 const Neurofeedback = () => {
   return (
     <div className="bg-white text-gray-800 font-sans">
-      <section className="bg-gradient-to-r from-[rgb(211,92,19)] to-[rgb(211,92,19,0.8)] py-16 md:py-24 px-5 sm:px-6 text-center text-white">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-6">Neurofeedback</h1>
+      <section className="bg-gradient-to-r from-[rgb(211,92,19)] to-[rgb(211,92,19,0.8)] flex items-center flex-col justify-center py-16 md:py-24 px-5 sm:px-6 text-center text-white">
+        <div
+          className="p-4 bg-gray-100/20
+         flex items-center flex-col justify-center rounded-md "
+        >
+          <motion.img
+            src="/Poze/logoPsihologescu.avif"
+            className="md:w-1/3 w-full"
+            alt="Logo Psihologescu"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          />
+          <motion.p
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-white text-sm"
+          >
+            găsește-ți echilibrul prin terapie
+          </motion.p>
         </div>
+        <motion.h3
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-3xl font-semibold mt-12  "
+        >
+          Neurofeedback
+        </motion.h3>
       </section>
 
       <div className="max-w-6xl mx-auto px-5 sm:px-6 py-10 sm:py-14">
+        <div className="w-full h-56 rounded-md my-16 aspect-1 bg-gray-200 flex items-center justify-center p-1">
+          <p>imagine sugestiva</p>
+        </div>
         <section className="mb-14 sm:mb-20">
           <div className="flex items-center mb-8">
             <div className="bg-[rgb(211,92,19)] w-2 h-10 mr-4"></div>
@@ -49,7 +79,9 @@ const Neurofeedback = () => {
             </p>
           </div>
         </section>
-
+        <div className="w-full h-56 rounded-md my-16 aspect-1 bg-gray-200 flex items-center justify-center p-1">
+          <p>imagine sugestiva</p>
+        </div>
         <section className="mb-14 sm:mb-20">
           <div className="flex items-center mb-8">
             <div className="bg-[rgb(211,92,19)] w-2 h-10 mr-4"></div>
@@ -110,7 +142,9 @@ const Neurofeedback = () => {
             </p>
           </div>
         </section>
-
+        <div className="w-full h-56 rounded-md my-16 aspect-1 bg-gray-200 flex items-center justify-center p-1">
+          <p>imagine sugestiva</p>
+        </div>
         <section className="mb-14 sm:mb-20">
           <div className="flex items-center mb-8">
             <div className="bg-[rgb(211,92,19)] w-2 h-10 mr-4"></div>
@@ -131,7 +165,9 @@ const Neurofeedback = () => {
             </p>
           </div>
         </section>
-
+        <div className="w-full h-56 rounded-md my-16 aspect-1 bg-gray-200 flex items-center justify-center p-1">
+          <p>imagine sugestiva</p>
+        </div>
         <section className="mb-14 sm:mb-20">
           <div className="flex items-center mb-8">
             <div className="bg-[rgb(211,92,19)] w-2 h-10 mr-4"></div>
@@ -175,7 +211,9 @@ const Neurofeedback = () => {
             </ul>
           </div>
         </section>
-
+        <div className="w-full h-56 rounded-md my-16 aspect-1 bg-gray-200 flex items-center justify-center p-1">
+          <p>imagine sugestiva</p>
+        </div>
         <section className="mb-14 sm:mb-20">
           <div className="flex items-center mb-8">
             <div className="bg-[rgb(211,92,19)] w-2 h-10 mr-4"></div>
@@ -192,8 +230,6 @@ const Neurofeedback = () => {
           </div>
         </section>
       </div>
-
-      <Contact />
     </div>
   );
 };
